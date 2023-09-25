@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back-video {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.bodyLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    clear: both;
+}
+.bodyLogout {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 300px;
+    clear: both;
+}
+header {/*Login Main Page*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    color: gold;
+    position: relative;
+    font-size: 90px;
+    align-self: center;
+    font-weight: bold;
+}
+
+/*End Of Login Main Page*/
+/*----------------------------------------------------------------------------------*/
+/*Login Container form*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: gold;
+}
+.inputBox {
+    background-color: transparent;
+    color: gold;
+}
+.inputBox:hover {
+    box-shadow: 0px 0px 5px white;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(137, 137, 137);
+    margin-top: 10px;
+    outline: none;
+    
+}
+.login-btn{
+    border: none;
+    background-color: rgb(255, 71, 71);
+    color: gold;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: 40px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg);
+    box-shadow: 0px 0px 5px white;
+}
+.login-btn:hover{
+    box-shadow: 0px 0px 20px white;
+}
+#lgnBtn:hover {
+    font-weight: bolder;
+}
+/*End Of Login Container form*/
+/*-----------------------------------------------------------------------*/
+/* Welcome Home and Logout Button*/
+.mainHome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border: solid 1 px red;
+  bottom: 160px;
+}
+.logout-btn{
+    position: relative;
+    border: none;
+    background-color: rgb(255, 71, 71);
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    right: 70px;
+    bottom: 100px;
+}
+.logoutLabel {
+    color: yellow;
+    position: relative;
+    align-self: center;
+    font-size: 60px;
+    text-shadow: 0px 0px 20px white;
+}/*End Of Welcome Home and Logout Button*/
+/*-----------------------------------------------------------------------*/
+ /* Deposit Withdraw Balance forms*/
+
+h4{color: white;}
+	
+.btn{
+    position: relative;
+    left: 7px;
+    border: none;
+    background-color: rgb(255, 71, 71);
+    color: #fff;
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 5px
+}
+.form-control {
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px white;
+}
+::placeholder{
+    position: relative;
+    left: 15px;
+    color: white;
+}
+.deposit {
+	background-size: 100px;
+    width: 100%;
+}
+.withdraw {
+    background-size: 100px;
+    width: 100%;
+}
+.balance {
+    background-size: 100px;
+    width: 100%;
+    order: 1;
+}
+.status {
+	color: white;
+	border-radius: 10px; 
+}
+.container2 {/*Deposit Withdraw Balance Container*/
+   flex-direction: row;
+   display: flex;
+   position: relative;
+}
+.container3 {/*Deposit Withdraw Amount Container*/
+    flex-direction: row;
+    display: flex;
+}
+h4 {
+   position: relative; 
+   left: 25px;
+   text-shadow: 0px 0px 20px white;
+}
+h5 {
+    position: relative;
+    left: 40px;
+    text-shadow: 0px 0px 20px white;
+}
+h2 {
+    position: relative;
+    left: 30px;
+    text-shadow: 0px 0px 20px white;
+}
+/*End Of  Deposit Withdraw Balance forms*/
+#currency {
+    position: relative;
+    float: right;
+    left: 157px;
+}
+.clock {
+    position: relative;
+    float: right;
+    right: 20px;
+    bottom: 350px;
+}
+/*-----------------------------------------------------------------------*/
+@media screen and (max-width: 740px), screen and (max-width:740px) {/*Responsive Settings*/
+    .logoutLabel {
+       position: relative;
+       left: 50px;
+    }
+    .logout-btn {
+        position: relative;
+        top: 550px;
+    }
+    #currency {
+        position: relative;
+        top: 80px;
+    }
+    .clock {
+        position: relative;
+        bottom: 220px;
+        right: 150px;
+    }
+}

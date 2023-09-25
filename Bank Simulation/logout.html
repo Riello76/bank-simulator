@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Home</title>
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="vecteezy_flower-animation-background_3548437.mp4" type="video/mp4">
+      </video>
+      <div class="bodyLogout">
+            <div class="container2"><!--Balance Withdraw Deposit Area-->
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="current-deposit">00</span></h2>
+                </div>
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="current-withdraw">00</span></h2>
+                </div>
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="current-balance">1240</span></h2>
+                </div>
+            </div><!--End of Balance Withdraw Deposit Area-->
+ <!-------------------------------------------------------------------------------------------------------------------------->       
+         <div class="container3"><!--Deposit and Withdraw container area-->
+                <div>
+                    <h4>Deposit Amount</h4>
+                    <input style="color: white;" id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br>
+                    <button id="deposit-btn" class="btn">Deposit</button>
+                </div>
+                <div>
+                    <h4>Withdraw Amount</h4>
+                    <input style="color: white;" id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br>
+                    <button id="withdraw-btn" class="btn">Withdraw</button>
+                </div>
+         </div><!--End of Deposit and Withdraw container area-->
+      </div>
+        <!-------------------------------------------------------------------------------------------------------------------------->       
+        <div class="mainHome">
+            <label class="logoutLabel" for="logout-btn">Welcome to your Bank!</label>
+            <button class="logout-btn">Logout</button>
+        </div>
+          <iframe class="clock" src="https://free.timeanddate.com/clock/i8vn7uuv/n136/tluk/fn6/fs16/fcfff/tct/pct/ftb/bas2/bat0/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="203" height="52" allowtransparency="true"></iframe>
+       <script src="./logout.js"></script>
+  </body>  
+</html>
